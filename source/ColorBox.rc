@@ -1,0 +1,213 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ColorBox.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ColorBox.ico"
+IDI_OK                  ICON    DISCARDABLE     "res\\ok.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COLORBOX_DIALOG DIALOGEX 0, 0, 315, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ColorBox v1.2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,276,87,32,32,BS_ICON
+    CONTROL         "Slider1",IDC_SLIDER_R,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,7,19,192,9
+    CONTROL         "Slider1",IDC_SLIDER_G,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,7,33,192,9
+    CONTROL         "Slider1",IDC_SLIDER_B,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,7,47,192,9
+    CONTROL         "",IDC_COLORBOX,"Static",SS_ETCHEDFRAME,7,62,128,57
+    RTEXT           "Red",IDC_STATIC,204,19,20,10,SS_CENTERIMAGE
+    RTEXT           "Green",IDC_STATIC,204,33,20,10,SS_CENTERIMAGE
+    RTEXT           "Blue",IDC_STATIC,204,47,20,10,SS_CENTERIMAGE
+    RTEXT           "Dec:",IDC_STATIC,135,63,19,12,SS_CENTERIMAGE
+    RTEXT           "Hex:",IDC_STATIC,135,78,19,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Copy",IDC_COPYHEX,235,78,35,12
+    PUSHBUTTON      "Copy",IDC_COPYDEC,235,63,35,12
+    EDITTEXT        IDC_DECIMAL_TEXT,159,63,73,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_HEXIDECIMAL_TEXT,159,78,73,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Float:",IDC_STATIC,135,92,19,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Copy",IDC_COPYFLOAT,235,92,35,12
+    EDITTEXT        IDC_FLOAT_TEXT,159,92,73,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Dec",IDC_STATIC,228,7,25,10,SS_CENTERIMAGE
+    CTEXT           "Hex",IDC_STATIC,256,7,25,10,SS_CENTERIMAGE
+    CTEXT           "Float",IDC_STATIC,283,7,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RED_TEXT_DEC,229,18,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_GREEN_TEXT_DEC,229,32,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_BLUE_TEXT_DEC,229,46,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_RED_TEXT_HEX,256,18,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GREEN_TEXT_HEX,256,32,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLUE_TEXT_HEX,256,46,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RED_TEXT_FLOAT,283,18,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GREEN_TEXT_FLOAT,283,32,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLUE_TEXT_FLOAT,283,46,25,12,ES_AUTOHSCROLL
+    RTEXT           "PSX:",IDC_STATIC,136,107,19,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Copy",IDC_COPYPSX,236,107,35,12
+    EDITTEXT        IDC_PSX_TEXT,160,107,73,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ColorBox - The Fluid Studios Color Picker\0"
+            VALUE "FileVersion", "1, 1, 0, 0\0"
+            VALUE "InternalName", "ColorBox\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000 Fluid Studios\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ColorBox.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Fluid Studios Color Picker\0"
+            VALUE "ProductVersion", "1, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_COLORBOX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\ColorBox.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
