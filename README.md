@@ -6,6 +6,14 @@ This code has been preserved as faithfully as possible, warts and all. All code 
 
 ---
 
+## Original description
+
+FSColor is a Color Picker tool for Windows that you can use in your own tools (it's a DLL.) There is also a pre-built executable if you just want to use it as a stand-alone tool. Of all the tools I've written over the years, this tool is the one I still use today and I use it all the time. It was updated for 64-bit processors in Jan 2014.
+
+Adobe's PhotoShop product really nailed the color selection process on the head. I personally saw no need to improve on that, but I wanted a stand-alone tool that encompassed a few extra features (such as picking colors from the desktop & other windows, copying various color RGB formats to the clipboard, etc.) FSColor includes these features and more.
+
+![Screenshot](https://nettlep.github.io/FSColor/assets/fscolor.png)
+
 ## Original Readme.txt
 
     --------------------------------------------------------------------------------
